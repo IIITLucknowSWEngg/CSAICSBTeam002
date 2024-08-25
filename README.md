@@ -5,5 +5,6 @@
 2) Ujjwal Goyal CSB LCB2023013 ujjwalgoyal.ajmercity@gmail.com Ujjwal0207
 3) Apoorv Mittal CSB LCB2023021 apoorvmittal9@gmail.com apoorv1110
 4) Manish Kumar CSB LCB2023034 7055ranamanish@gmail.com manishk5507
+5) Digvijay Deshmukh CSAI LCI2023012 digvijaydeshmukh5555@outlook.com digvijay-555
 # Project Name : Uber Clone 
 ## link to the GitHub Issue to record the approval : https://github.com/IIITLucknowSWEngg/Assignment/issues/3
