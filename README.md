@@ -9,5 +9,6 @@
 6) Vaibhav Verma CSB LCB2023029 vaibhavvermaa16@gmail.com Vaibhavvermaa16
 7) Ashwin Gajbhiye CSB LCB2023023
 ashwingajbhiye36@gmail.com AshwinGajbhiye
+8) Nachiket Deore CSB LCB2023002 nachiketdeore10@gmail.com nachiketdeore9
 # Project Name : Uber Clone 
 ## link to the GitHub Issue to record the approval : https://github.com/IIITLucknowSWEngg/Assignment/issues/3
