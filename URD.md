@@ -18,3 +18,15 @@ The Uber clone will be a ride-hailing mobile application that connects riders wi
 - [User Interface Design Document](./User_Interface_Design_Document.md)
 - [System Architecture Document](./System_Architecture_Document.md)
 - [Stakeholders.md](./Stakeholders.md)
+
+## 2. User Characteristics
+
+### 2.1 Riders
+- Typically smartphone users familiar with basic app navigation.
+- Expect a seamless and quick ride-booking experience.
+- Value real-time updates, transparent pricing, and safety features.
+
+### 2.2 Drivers
+- Smartphone users who need clear, easy-to-follow instructions for accepting and completing rides.
+- Prefer intuitive interfaces for managing ride requests and navigation.
+- Require clear payment details and history tracking.
