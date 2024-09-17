@@ -55,3 +55,58 @@ The application will operate on Android and iOS mobile platforms. It will requir
 - Users have access to smartphones with stable internet connections.
 - Integration with third-party services is stable and reliable.
 - The application will initially support only one currency and language.
+
+## 3. System Features
+
+### 3.1 User Registration and Authentication
+**Description:** Users can register using email or phone numbers. The system supports secure login and password recovery.
+
+**Functional Requirements:**
+- The system shall allow users to register with an email or phone number.
+- The system shall send a verification code to the user for account activation.
+- The system shall support password recovery via email or SMS.
+
+### 3.2 Ride Booking
+**Description:** Users can book rides by specifying pickup and drop-off locations. The system calculates the fare and provides an ETA.
+
+**Functional Requirements:**
+- The system shall allow users to enter a pickup and drop-off location.
+- The system shall provide an estimated fare and ETA before confirming the ride.
+- The system shall notify the driver of a new ride request.
+
+### 3.3 Payment Processing
+**Description:** The system processes payments through various methods and records payment history.
+
+**Functional Requirements:**
+- The system shall allow users to choose a payment method (credit/debit card, in-app wallet).
+- The system shall automatically charge the user after the ride is completed.
+- The system shall maintain a payment history for users and drivers.
+
+### 3.4 Rating and Reviews
+**Description:** Users can rate and review drivers after each ride, and drivers can rate riders.
+
+**Functional Requirements:**
+- The system shall allow users to rate and review drivers after each ride.
+- The system shall allow drivers to rate riders after each ride.
+
+## 4. External Interface Requirements
+
+### 4.1 User Interfaces
+- **Mobile Application:** The UI will be intuitive, offering easy navigation and access to key functionalities. Designed to be responsive, it will ensure compatibility across various screen sizes.
+- **Admin Panel:** A web-based admin panel that provides a comprehensive dashboard for managing users, drivers, and rides. It will include analytics and reporting features.
+
+### 4.2 Hardware Interfaces
+The system will interact with mobile device hardware, including:
+- **GPS Modules:** For tracking pickup and drop-off locations.
+- **Cameras:** Used for profile pictures.
+- **NFC:** For mobile payments.
+
+### 4.3 Software Interfaces
+- **Third-Party APIs:** Integration with APIs for payment processing, map services, and SMS notifications.
+- **Database:** The system will use a NoSQL database (e.g., MongoDB) for data storage.
+
+### 4.4 Communication Interfaces
+- The application will communicate over secure HTTPS protocols, ensuring data privacy and integrity.
+- It will use WebSocket for real-time updates and notifications.
+
+
