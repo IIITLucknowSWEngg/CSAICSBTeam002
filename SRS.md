@@ -110,3 +110,48 @@ The system will interact with mobile device hardware, including:
 - It will use WebSocket for real-time updates and notifications.
 
 
+# 5. Non-Functional Requirements (NFRs)
+## 5.1 Performance Requirements
+- The application shall load within 2 seconds on mobile devices under normal network conditions.
+- The system shall handle up to 10,000 concurrent users without performance degradation.
+- Ride requests shall be processed and matched with drivers within 5 seconds.
+
+## 5.2 Security Requirements
+- User data shall be encrypted both in transit (using TLS) and at rest (using AES-256).
+- The system shall enforce strong password policies, including multi-factor authentication for users.
+- Regular security audits and penetration testing shall be conducted to identify and mitigate vulnerabilities.
+
+## 5.3 Availability and Reliability
+- The system shall achieve 99.9% uptime, with minimal downtime for maintenance.
+- The application shall be resilient to server failures, with automatic failover mechanisms in place.
+- Data backups shall be performed daily and stored in geographically diverse locations.
+
+## 5.4 Scalability
+- The system architecture shall support horizontal scaling to handle increased load.
+- The application shall be designed to accommodate new features and services without significant refactoring.
+- The database shall be optimized to handle large volumes of data, with efficient indexing and query optimization.
+
+## 5.5 Usability
+- The UI/UX design shall prioritize ease of use, ensuring that all users can navigate the application without extensive training.
+- The application shall be accessible to users with disabilities, following WCAG 2.1 guidelines.
+- User feedback mechanisms shall be integrated to continuously improve the usability of the application.
+
+## 5.6 Maintainability
+- The codebase shall be modular, with clear separation of concerns to facilitate easy maintenance and updates.
+- Comprehensive documentation shall be maintained for all system components, including APIs, database schemas, and user interfaces.
+- The system shall support automated testing to ensure that new updates do not introduce regressions.
+
+## 5.7 Compliance
+- The system shall comply with relevant data protection regulations, including GDPR.
+- Payment processing shall adhere to PCI-DSS standards.
+- The system shall include features for user data export and deletion to comply with privacy regulations.
+
+# 6. Other Requirements
+- **Localization**: The application shall support localization to enable use in different regions with minimal changes.
+- **Ethical Requirements**: The application shall include features to prevent misuse, such as reporting mechanisms for inappropriate behavior by drivers or riders.
+
+# 7. Appendices
+- **Appendix A**: Glossary of Terms
+- **Appendix B**: Diagrams (System Architecture, Use Case Diagrams)
+- **Appendix C**: Detailed Requirements Matrix
+
