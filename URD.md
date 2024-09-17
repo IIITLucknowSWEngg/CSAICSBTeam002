@@ -15,9 +15,9 @@ The Uber clone will be a ride-hailing mobile application that connects riders wi
 - **ETA**: Estimated Time of Arrival.
 
 ### 1.4 References
-- [User Interface Design Document](./User_Interface_Design_Document.md)
-- [System Architecture Document](./System_Architecture_Document.md)
-- [Stakeholders.md](./Stakeholders.md)
+- [User Interface Design Document](#)
+- [System Architecture Document](#)
+- [Stakeholders.md](https://github.com/IIITLucknowSWEngg/CSAICSBTeam002/blob/main/stakeholders.md)
 
 ## 2. User Characteristics
 
