@@ -102,4 +102,39 @@ The Uber clone will be a ride-hailing mobile application that connects riders wi
 - Must be able to view real-time data on active rides.
 - Must be able to access ride and payment history for all users.
 
+## 4. Non-Functional Requirements
+
+### 4.1 Performance
+- The app must load within 2 seconds under normal network conditions.
+- Ride requests and updates must be processed in real-time.
+
+### 4.2 Security
+- User data must be encrypted in transit and at rest.
+- The app must comply with data protection regulations (e.g., GDPR).
+- User authentication must be secure, with options for multi-factor authentication.
+
+### 4.3 Usability
+- The app must be intuitive and easy to navigate for both riders and drivers.
+- The UI must be responsive and accessible on devices with various screen sizes.
+
+### 4.4 Reliability
+- The app must be available 99.9% of the time, with minimal downtime.
+- Backup systems should ensure data is not lost in case of server failure.
+
+### 4.5 Scalability
+- The app must be able to handle a growing number of users without degradation in performance.
+- The backend should support the addition of new features without significant rework.
+
+## 5. Assumptions and Dependencies
+- The app will rely on third-party services for map integration, payment processing, and notifications.
+- The project assumes that users will have access to smartphones and stable internet connections.
+
+## 6. Acceptance Criteria
+- The app must pass all functional and non-functional tests.
+- User feedback during the beta testing phase must be addressed before the final release.
+- The app must meet all security and performance benchmarks outlined in this document.
+
+## 7. Conclusion
+This document defines the user requirements for the Uber clone application. It serves as a guide for the development team to ensure that the final product meets the needs of the end-users and aligns with the project’s goals.
+
 
