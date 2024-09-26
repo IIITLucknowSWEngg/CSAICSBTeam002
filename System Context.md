@@ -58,3 +58,4 @@ Support --> CustomerSupport : Handle User Issues
 @enduml
 ```
 
+![System Context Diagram](System Context.png)
