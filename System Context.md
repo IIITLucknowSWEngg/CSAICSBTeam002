@@ -58,4 +58,3 @@ Support --> CustomerSupport : Handle User Issues
 @enduml
 ```
 
-![Deployment Diagram](Deployment.png)
