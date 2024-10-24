@@ -102,20 +102,40 @@ The Uber clone will be a ride-hailing mobile application that connects riders wi
 - Must be able to view real-time data on active rides.
 - Must be able to access ride and payment history for all users.
 
-  ### 3.10 Project Sponsor
-The Project Sponsor for the Uber Clone App project plays a pivotal role in ensuring the success of the initiative. As the key stakeholder, the sponsor provides financial resources, sets the overall direction, and supports the project team by removing roadblocks and ensuring alignment with business objectives. Their involvement includes overseeing the project’s development, approving major milestones, and ensuring that the final product meets the expected outcomes in terms of functionality, user experience, and market viability. The sponsor’s guidance is crucial for maintaining focus on delivering a seamless and efficient ride-sharing application.
+### 3.10 Project Sponsor
+ The Project Sponsor for the Uber Clone App project plays a pivotal role in ensuring the success of the initiative. As the key stakeholder, 
+ the sponsor provides financial resources, sets the overall direction, and supports the project team by removing roadblocks and ensuring 
+ alignment with business objectives. Their involvement includes overseeing the project’s development, approving major milestones, and 
+ ensuring that the final product meets the expected outcomes in terms of functionality, user experience, and market viability. The 
+ sponsor’s guidance is crucial for maintaining focus on delivering a seamless and efficient ride-sharing application.
 
 ### 3.11 Project Manager
-The Project Manager for the Uber Clone App project is responsible for overseeing the planning, execution, and delivery of the project. They ensure that the project stays on track in terms of timeline, budget, and scope. The Project Manager coordinates between the development team, stakeholders, and the Project Sponsor to ensure smooth communication and alignment with the project’s goals. They manage risks, resolve issues, and ensure that each phase of the project is completed efficiently, maintaining the overall quality and functionality of the app while ensuring the team adheres to best practices.
+ The Project Manager for the Uber Clone App project is responsible for overseeing the planning, execution, and delivery of the project. 
+ They ensure that the project stays on track in terms of timeline, budget, and scope. The Project Manager coordinates between the 
+ development team, stakeholders, and the Project Sponsor to ensure smooth communication and alignment with the project’s goals. They manage 
+ risks, resolve issues, and ensure that each phase of the project is completed efficiently, maintaining the overall quality and 
+ functionality of the app while ensuring the team adheres to best practices.
 
 ### 3.12 Development Team
-The Development Team for the Uber Clone App project consists of skilled software engineers and designers responsible for building and implementing the app’s features. Their tasks include designing the user interface, developing the backend functionality, integrating payment systems, GPS tracking, and ensuring seamless communication between drivers and passengers. The team works collaboratively, following agile methodologies to deliver iterative progress, fix bugs, and ensure the app meets performance standards. They also focus on optimizing the user experience while ensuring that the app functions reliably across various devices and platforms.
+ The Development Team for the Uber Clone App project consists of skilled software engineers and designers responsible for building and 
+ implementing the app’s features. Their tasks include designing the user interface, developing the backend functionality, integrating 
+ payment systems, GPS tracking, and ensuring seamless communication between drivers and passengers. The team works collaboratively, 
+ following agile methodologies to deliver iterative progress, fix bugs, and ensure the app meets performance standards. They also focus on 
+ optimizing the user experience while ensuring that the app functions reliably across various devices and platforms.
 
 ### 3.13 UI/UX Designers
-The UI/UX Designers for the Uber Clone App project play a crucial role in creating a user-friendly and visually appealing interface. They focus on designing intuitive layouts and seamless navigation to ensure an effortless experience for both drivers and passengers. The UI/UX team works closely with developers to implement designs that prioritize ease of use, accessibility, and responsiveness across all devices. By conducting user research and testing, they refine the app’s design to ensure it meets user expectations, ultimately enhancing overall satisfaction and engagement with the app.
+ The UI/UX Designers for the Uber Clone App project play a crucial role in creating a user-friendly and visually appealing interface. They 
+ focus on designing intuitive layouts and seamless navigation to ensure an effortless experience for both drivers and passengers. The UI/UX 
+ team works closely with developers to implement designs that prioritize ease of use, accessibility, and responsiveness across all devices. 
+ By conducting user research and testing, they refine the app’s design to ensure it meets user expectations, ultimately enhancing overall 
+ satisfaction and engagement with the app.
 
 ### 3.14 Quality Assurance (QA) Team
-The Quality Assurance (QA) Team for the Uber Clone App project is responsible for ensuring the app's reliability, performance, and overall quality. They rigorously test the application to identify bugs, glitches, or issues in functionality across different devices and platforms. The QA team conducts various testing methods, including unit tests, integration tests, and user acceptance tests, to ensure that the app meets all technical requirements and delivers a seamless user experience. Their efforts help guarantee that the app functions smoothly, adheres to the highest quality standards, and is ready for a successful launch.
+ The Quality Assurance (QA) Team for the Uber Clone App project is responsible for ensuring the app's reliability, performance, and overall 
+ quality. They rigorously test the application to identify bugs, glitches, or issues in functionality across different devices and 
+ platforms. The QA team conducts various testing methods, including unit tests, integration tests, and user acceptance tests, to ensure 
+ that the app meets all technical requirements and delivers a seamless user experience. Their efforts help guarantee that the app functions 
+ smoothly, adheres to the highest quality standards, and is ready for a successful launch.
 
 
 ## 4. Non-Functional Requirements
