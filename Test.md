@@ -62,7 +62,42 @@ describe('User Login', function() {
     expect(browser.getUrl()).to.include('/dashboard');
   });
 });
+```
 
+# Feature: Ride Booking
+
+## Scenario: User books a ride successfully
+
+### Given:
+The user is logged in.  
+The user is on the ride booking page.
+
+### When:
+The user enters valid pickup and drop-off locations.  
+The user selects a payment method.
+
+### Then:
+The ride should be successfully booked.  
+The user should receive a confirmation message.
+
+## Chai.js Code:
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const ridePage = require('../pages/ridePage');
+
+describe('Ride Booking', function() {
+  it('should book a ride successfully', function() {
+    ridePage.open();
+    ridePage.enterLocations('123 Main St', '456 Elm St');
+    ridePage.selectPaymentMethod('Credit Card');
+    ridePage.submitBooking();
+    expect(ridePage.getConfirmationMessage()).to.equal('Ride booked successfully');
+    expect(browser.getUrl()).to.include('/ride-details');
+  });
+});
+```
 
 # Feature: Ride Status Update
 
