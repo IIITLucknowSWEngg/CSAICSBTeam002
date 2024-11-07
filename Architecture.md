@@ -1,4 +1,3 @@
-![Component_Diagram_Driver](https://github.com/user-attachments/assets/6bbc5ab7-485c-491f-8612-ed2881d470ad)
 # System Context  Diagram Code
 
 <img width="1418" alt="System Context" src="https://github.com/user-attachments/assets/10b7e891-2b59-4316-8ab9-85c8c00277dd">
@@ -65,6 +64,56 @@ Support --> CustomerSupport : Handle User Issues
 # Container Diagram
 ## Driver
 ## Rider
+![container-diagram-rider](https://github.com/user-attachments/assets/9fc8bddc-10be-48a4-8096-8c770fc4f56f)
+
+```plantuml
+@startuml
+!define RECTANGLE rectangle
+!define BOLD **<color:Black>**
+
+title Container Diagram - Uber Clone
+
+' Add primary containers
+' User section
+RECTANGLE "Mobile App" as mobileApp <<Mobile Application>> #lightblue
+RECTANGLE "Web App" as webApp <<Web Application>> #lightblue
+RECTANGLE "User API Gateway" as userGateway <<API Gateway>> #lightblue
+
+' Backend services
+RECTANGLE "Ride Service" as rideService <<Microservice>> #lightgreen
+RECTANGLE "User Service" as userService <<Microservice>> #lightgreen
+RECTANGLE "Payment Service" as paymentService <<Microservice>> #lightgreen
+RECTANGLE "Notification Service" as notificationService <<Microservice>> #lightgreen
+
+' Database containers
+RECTANGLE "Ride Database" as rideDB <<Database>> #lightyellow
+RECTANGLE "User Database" as userDB <<Database>> #lightyellow
+RECTANGLE "Payment Database" as paymentDB <<Database>> #lightyellow
+
+' External systems
+RECTANGLE "External Payment System" as paymentSystem <<External System>> #pink
+RECTANGLE "Third-Party Map API" as mapAPI <<External System>> #pink
+RECTANGLE "Push Notification Service" as pushNotification <<External System>> #pink
+
+' Relationships between containers
+mobileApp --> userGateway : "API Calls"
+webApp --> userGateway : "API Calls"
+userGateway --> rideService : "Manage Rides"
+userGateway --> userService : "Manage User Data"
+userGateway --> paymentService : "Process Payments"
+userGateway --> notificationService : "Send Notifications"
+
+rideService --> rideDB : "Read/Write Data"
+userService --> userDB : "Read/Write Data"
+paymentService --> paymentDB : "Read/Write Data"
+
+paymentService --> paymentSystem : "Process Payments"
+rideService --> mapAPI : "Fetch Routes"
+notificationService --> pushNotification : "Send Push Notifications"
+
+@enduml
+```
+
 ## Admin
 
 # Component Diagram
