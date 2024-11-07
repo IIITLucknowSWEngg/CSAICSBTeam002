@@ -1,3 +1,13 @@
+# Software Design Description (SDD)
+
+## 1. Introduction
+
+### 1.1 Purpose
+The purpose of this Software Design Description (SDD) is to provide a detailed design for the Uber clone ride-hailing application. This document describes the software's architecture, components, interfaces, and their interactions to ensure that the implementation meets the system's functional and non-functional requirements.
+
+### 1.2 Scope
+The Uber clone system enables users to request and pay for rides via a mobile app. Drivers are able to offer services through the same platform. The system includes the mobile application, backend API services, payment processing, real-time communication, and external integration with services like maps and SMS gateways.
+
 ## 4. Module Design
 
 ### 4.1 Mobile Application (Frontend)
