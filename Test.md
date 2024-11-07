@@ -125,7 +125,7 @@ describe('Payment Processing', function() {
     paymentPage.enterPaymentDetails('1234 5678 9012 3456', '12/25', '123');
     paymentPage.submitPayment();
     expect(paymentPage.getPaymentConfirmation()).to.equal('Payment successful');
-    expect(browser.getUrl()).to.include('/payment-confirmation');
+    expect(browser.getUrl()).to.include('/payment-confirmation') ;
   });
 });
 
