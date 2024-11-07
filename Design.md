@@ -44,8 +44,25 @@ Handles:
 Handles:
 - **Ride Creation**: Users create ride requests with pickup and drop-off locations.
 - **Fare Calculation**: Fare is calculated based on distance and time.
-- **Ride Matching*
-*: Matches users with drivers based on proximity.
+- **Ride Matching**: Matches users with drivers based on proximity.
+#### 4.2.4 Payment Service
+Manages:
+- Payment processing using external payment gateways.
+- Maintaining payment history for users.
+
+#### 4.2.5 Notification Service
+Responsible for sending notifications to users and drivers about ride status changes.
+
+
+## 5. Database Design The Uber clone uses a NoSQL database (e.g., MongoDB). Below is the database schema for major entities. 
+![Design](https://github.com/user-attachments/assets/2e0649d3-c90b-45fa-96b2-26930fb27858)
+
+### Explanation: 
+- **Users**: Stores user details like name, contact, preferences.
+- **Drivers**: Stores details about drivers, including their vehicle information and ratings.
+- **Rides**: Stores ride-related information like pickup, drop-off, and status.
+-  **Payments**: Stores payment transaction details.
+
 
 ## 6. Interface Design
 
