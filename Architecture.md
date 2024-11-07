@@ -1,4 +1,4 @@
-# System Context  Diagram Code
+![Component_Diagram_Driver](https://github.com/user-attachments/assets/6bbc5ab7-485c-491f-8612-ed2881d470ad)# System Context  Diagram Code
 
 <img width="1418" alt="System Context" src="https://github.com/user-attachments/assets/10b7e891-2b59-4316-8ab9-85c8c00277dd">
 
@@ -68,6 +68,49 @@ Support --> CustomerSupport : Handle User Issues
 
 # Component Diagram
 ## Driver
+![Component_Diagram_Driver](https://github.com/user-attachments/assets/44590bea-5bc8-4a37-9a49-e42059cab6db)
+```plantuml
+@startuml
+' External Actors
+actor "Driver (User)" as Driver
+actor "Map Service" as MapService
+actor "Notification Service" as NotificationService
+actor "Payment Gateway" as PaymentGateway
+actor "Rider (User)" as Rider
+actor "Customer Support" as CustomerSupport
+
+' System Boundary: Uber Clone App
+package "Uber Clone App" {
+
+    ' Subsystems specifically related to Driver
+    rectangle "Driver Registration \nand Authentication" as DriverRegistration
+    rectangle "Driver Profile Management" as DriverProfile
+    rectangle "Ride Acceptance \nand Management" as RideManagement
+    rectangle "Payment Processing" as DriverPayment
+    rectangle "Driver Ratings \nand Feedback" as DriverRatings
+    rectangle "Real-Time Location Tracking" as DriverTracking
+    rectangle "Driver Notifications" as DriverNotifications
+    rectangle "In-App Chat \nand Support" as DriverChatSupport
+}
+
+' Relationships between Driver and system components
+Driver --> DriverRegistration : Register/Login
+Driver --> DriverProfile : Manage Profile
+Driver --> RideManagement : Accept/Decline Ride Requests
+Driver --> DriverPayment : Track Earnings/Receive Payment
+Driver --> DriverRatings : Rate Rider
+Driver --> DriverNotifications : Receive Ride Notifications
+Driver --> DriverChatSupport : Chat with Rider/Customer Support
+Driver --> DriverTracking : Real-Time Location Sharing
+
+' External Interactions
+DriverTracking --> MapService : Access Navigation Maps
+DriverPayment --> PaymentGateway : Process Driver Payments
+DriverNotifications --> NotificationService : Send Notifications to Driver
+DriverChatSupport --> CustomerSupport : Escalate Issues with Support
+@enduml
+```
+
 ## Rider
 ![Component_Diagram_Rider](https://github.com/user-attachments/assets/fea9fdc5-8e9b-4e06-8bb3-35069bd0ebea)
 
