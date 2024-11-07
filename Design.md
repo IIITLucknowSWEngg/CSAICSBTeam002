@@ -44,11 +44,26 @@ Handles:
 Handles:
 - **Ride Creation**: Users create ride requests with pickup and drop-off locations.
 - **Fare Calculation**: Fare is calculated based on distance and time.
-- **Ride Matching**: Matches users with drivers based on proximity.
+- **Ride Matching*
+*: Matches users with drivers based on proximity.
 
-![Design](https://github.com/user-attachments/assets/7fc22453-68b7-4634-8b21-4158d7976f6c)
+## 6. Interface Design
+
+### 6.1 API Design
+Below are some of the REST API endpoints for interaction:
+<img width="634" alt="Screenshot 2024-11-07 at 10 28 46 AM" src="https://github.com/user-attachments/assets/7ce242c4-adf0-4954-a18f-e66782a6dacb">
+
+### 6.2 External System Interfaces
+- **Payment Gateway**: Handles payment transactions (e.g., Stripe, PayPal).
+- **Maps API**: Provides geolocation and mapping services.
+- **SMS Gateway**: Sends notifications to users and drivers (e.g., Twilio).
+
+### 6.3 Notification Flow Diagram
+This diagram represents the flow of notifications between services.
 
 ## 7. Non-Functional Requirements
+
+![Design](https://github.com/user-attachments/assets/7fc22453-68b7-4634-8b21-4158d7976f6c)
 
 ### 7.1 Performance
 The system should handle at least 10,000 simultaneous users.
