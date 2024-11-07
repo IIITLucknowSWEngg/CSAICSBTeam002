@@ -46,3 +46,6 @@ Handles:
 - **Fare Calculation**: Fare is calculated based on distance and time.
 - **Ride Matching**: Matches users with drivers based on proximity.
 
+## 8. Conclusion
+This Software Design Description outlines the architecture, modules, database, and interfaces for the Uber clone system, ensuring the application is robust, scalable, and secure. The use of modular design and external system integration ensures that the system is capable of handling a large number of users and transactions effectively.
+
