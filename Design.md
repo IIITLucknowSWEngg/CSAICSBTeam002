@@ -46,6 +46,22 @@ Handles:
 - **Fare Calculation**: Fare is calculated based on distance and time.
 - **Ride Matching**: Matches users with drivers based on proximity.
 
+![Design](https://github.com/user-attachments/assets/7fc22453-68b7-4634-8b21-4158d7976f6c)
+
+## 7. Non-Functional Requirements
+
+### 7.1 Performance
+The system should handle at least 10,000 simultaneous users.
+
+### 7.2 Scalability
+The backend must be horizontally scalable.
+
+### 7.3 Availability
+99.9% uptime with redundancy in critical components.
+
+### 7.4 Security
+Data encryption for sensitive information.
+
 ## 8. Conclusion
 This Software Design Description outlines the architecture, modules, database, and interfaces for the Uber clone system, ensuring the application is robust, scalable, and secure. The use of modular design and external system integration ensures that the system is capable of handling a large number of users and transactions effectively.
 
