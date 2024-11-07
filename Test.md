@@ -98,6 +98,38 @@ describe('Ride Booking', function() {
   });
 });
 ```
+# Feature: Payment Processing
+
+## Scenario: User completes a payment for a ride
+
+### Given:
+The user has a ride booked.
+
+### When:
+The user selects a payment method and enters payment details.
+
+### Then:
+The payment should be processed successfully.  
+The user should receive a payment confirmation.
+
+## Chai.js Code:
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const paymentPage = require('../pages/paymentPage');
+
+describe('Payment Processing', function() {
+  it('should process payment successfully', function() {
+    paymentPage.open();
+    paymentPage.enterPaymentDetails('1234 5678 9012 3456', '12/25', '123');
+    paymentPage.submitPayment();
+    expect(paymentPage.getPaymentConfirmation()).to.equal('Payment successful');
+    expect(browser.getUrl()).to.include('/payment-confirmation');
+  });
+});
+
+
 
 # Feature: Ride Status Update
 
