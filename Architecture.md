@@ -1,4 +1,7 @@
 # System Context  Diagram Code
+
+<img width="1418" alt="System Context" src="https://github.com/user-attachments/assets/10b7e891-2b59-4316-8ab9-85c8c00277dd">
+
 ```plantuml
 @startuml
 
@@ -57,9 +60,11 @@ Support --> CustomerSupport : Handle User Issues
 
 @enduml
 ```
-<img width="1418" alt="System Context" src="https://github.com/user-attachments/assets/10b7e891-2b59-4316-8ab9-85c8c00277dd">
 
 # Component Diagram - Admin Code
+
+<img width="1414" alt="Component DIagram - Admin" src="https://github.com/user-attachments/assets/fc1ce63e-cf5c-42a4-8c1f-d058d3df9678">
+
 ```plantuml
 @startuml
 
@@ -107,9 +112,11 @@ NotificationManagement --> NotificationService : Send Notifications to Users
 @enduml
 
 ```
-<img width="1414" alt="Component DIagram - Admin" src="https://github.com/user-attachments/assets/fc1ce63e-cf5c-42a4-8c1f-d058d3df9678">
 
 # Deployment Diagram Code
+
+![Deployment Diagram](Deployment.png)
+
 ```plantuml
 @startuml
 title Deployment Diagram - Uber Clone System
@@ -170,6 +177,6 @@ cloud "Third-Party Services" {
 @enduml
 ```
 
-![Deployment Diagram](Deployment.png)
+
 
 
