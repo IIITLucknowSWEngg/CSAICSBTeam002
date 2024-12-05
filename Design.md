@@ -8,6 +8,98 @@ The purpose of this Software Design Description (SDD) is to provide a detailed d
 ### 1.2 Scope
 The Uber clone system enables users to request and pay for rides via a mobile app. Drivers are able to offer services through the same platform. The system includes the mobile application, backend API services, payment processing, real-time communication, and external integration with services like maps and SMS gateways.
 
+## 3 Architecture Design
+
+### 3.1 Architecture Components
+
+### User Interfaces
+- **Rider App**
+  - Registration/Login
+  - Ride Booking (Pickup & Drop-off)
+  - Real-time Ride Tracking
+  - Payment Gateway Integration
+  - Trip History & Ratings
+
+- **Driver App**
+  - Registration/Login with KYC
+  - Accept/Reject Ride Requests
+  - Navigation to Pickup & Drop-off
+  - Earnings Dashboard
+
+- **Admin Dashboard**
+  - User Management (Drivers & Riders)
+  - Ride Monitoring
+  - Analytics and Reporting
+
+---
+
+### 3.2 Backend Services
+- **Authentication**  
+  Secure login and token-based user authentication (JWT).  
+
+- **Ride Management**  
+  Matching riders with drivers, tracking ride lifecycle, and calculating fares.  
+
+- **Real-time Communication**  
+  WebSocket-based real-time updates for ride status and driver location.  
+
+- **Payment Integration**  
+  Processing payments, refunds, and tips via gateways like Stripe or Razorpay.  
+
+---
+
+### 3.3 Databases
+- **PostgreSQL**  
+  Storing structured data (user profiles, rides, payments).  
+
+- **Redis**  
+  Caching real-time data (driver locations, active rides).  
+
+---
+
+### 3.4 External APIs
+- **Google Maps API**  
+  Location services for geocoding, distance calculation, and routing.  
+
+- **Payment Gateway (Stripe)**  
+  For secure online payments and refunds.  
+
+---
+
+### 3.5 Infrastructure
+- **Hosting**  
+  Cloud services like AWS or Google Cloud for backend and databases.  
+
+- **Load Balancer**  
+  Nginx or AWS ELB for traffic distribution.  
+
+- **Monitoring Tools**  
+  Prometheus and Grafana for performance metrics and logging.  
+
+- **CI/CD Pipeline**  
+  Automated deployments using GitHub Actions or Jenkins.  
+
+---
+
+## 3.6 Workflow Overview
+1. **Rider books a ride**
+   - Inputs pickup and drop-off locations.
+   - Backend matches the request with an available driver.
+
+2. **Driver accepts/rejects the ride**
+   - Real-time updates sent to the rider.
+
+3. **Ride starts and completes**
+   - Driver and rider locations are tracked.
+   - Notifications sent at each stage.
+
+4. **Payment processed**
+   - Automatically via the app.
+
+5. **Admin oversight**
+   - Admin dashboard displays live analytics and operational metrics.
+
+
 ## 4. Module Design
 
 ### 4.1 Mobile Application (Frontend)
