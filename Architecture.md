@@ -1,27 +1,33 @@
 # System Context  Diagram
 
-<img width="1418" alt="System Context" src="https://github.com/user-attachments/assets/10b7e891-2b59-4316-8ab9-85c8c00277dd">
+![1](https://github.com/user-attachments/assets/02d3c1c0-b3f8-40f0-9313-43dca94f0fe5)
+
 
 # Container Diagram
 ## Driver
+
+![3](https://github.com/user-attachments/assets/61e0c853-333d-4e3c-8d92-f35e5adcc650)
+
 ## Rider
 
-![code](https://github.com/user-attachments/assets/cd3b1e98-c221-4562-b70d-873f80fd438f)
+![5](https://github.com/user-attachments/assets/38e250cc-680e-46ac-8d6b-6eed357d3a3e)
+
 
 ## Admin
+
+![4](https://github.com/user-attachments/assets/467ebabe-1df2-472a-a793-3cd0847044b3)
 
 # Component Diagram
 
 ## Driver
-![Component_Diagram_Driver](https://github.com/user-attachments/assets/44590bea-5bc8-4a37-9a49-e42059cab6db)
+![6](https://github.com/user-attachments/assets/f217afd7-1850-42b2-a191-8ad6ecf8abc4)
 
 ## Rider
-![Component_Diagram_Rider](https://github.com/user-attachments/assets/fea9fdc5-8e9b-4e06-8bb3-35069bd0ebea)
+![7](https://github.com/user-attachments/assets/594c12bc-8acf-4d95-9dfa-da0875a89f21)
 
 ## Admin
-
-<img width="1414" alt="Component DIagram - Admin" src="https://github.com/user-attachments/assets/fc1ce63e-cf5c-42a4-8c1f-d058d3df9678">
+![8](https://github.com/user-attachments/assets/b96950c9-1d71-4ae8-a497-1877f592c741)
 
 # Deployment Diagram
+![9](https://github.com/user-attachments/assets/bfd280e5-2558-429b-904b-4a0217ca7543)
 
-![Deployment Diagram](Deployment.png)
