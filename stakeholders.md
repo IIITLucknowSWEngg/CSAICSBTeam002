@@ -4,7 +4,7 @@
 This document outlines the key stakeholders involved in the Uber clone project. Stakeholders include all individuals, groups, and organizations that are affected by the project or have an interest in its success.
 
 ## External Stakeholders
-These stakeholders are directly involved in the planning, execution, and delivery of the project.
+These stakeholders are indirectly involved or affected by the outcomes of the project but not directly participating in its execution.
 
 | Key Stakeholders                | Role                                                                  | Responsibilities                                                                                                | Impact                                                                       | Qualifications                                                     |
 |---------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -18,7 +18,7 @@ These stakeholders are directly involved in the planning, execution, and deliver
 | Marketing Team                  | Promotes the app to attract users and drivers                        | Developing and executing campaigns; Managing social media; Analyzing market trends                              | Medium - Efforts impact visibility and user acquisition                      | Background in digital marketing; skilled in campaign management and analytics |
 
 ## Internal Stakeholders
-These stakeholders are indirectly involved or affected by the outcomes of the project but not directly participating in its execution.
+These stakeholders are directly involved in the planning, execution, and delivery of the project.
 
 | Key Stakeholders                | Role                                                                  | Responsibilities                                                                                                | Impact                                                                       | Qualifications                                                     |
 |---------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------|
