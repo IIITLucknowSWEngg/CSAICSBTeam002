@@ -137,6 +137,26 @@ The Uber clone will be a ride-hailing mobile application that connects riders wi
  that the app meets all technical requirements and delivers a seamless user experience. Their efforts help guarantee that the app functions 
  smoothly, adheres to the highest quality standards, and is ready for a successful launch.
 
+### 3.15 Customer Support Team
+ The Customer Support Team for the Uber Clone App project plays a pivotal role in ensuring user satisfaction by addressing queries, resolving issues, and  
+ providing assistance to both drivers and passengers. Their responsibilities include handling ride-related disputes, managing account recovery, assisting with 
+ payment concerns, and guiding users through app functionalities. The team is trained to offer prompt and empathetic responses through multiple channels such as 
+ in-app chat, email, and phone support. They work closely with the development and operations teams to escalate technical issues, report bugs, and suggest 
+ improvements based on user feedback. By maintaining high service standards, the Customer Support Team contributes significantly to building trust and loyalty 
+ among users.
+
+### 3.16 Marketing Team
+ The Marketing Team for the Uber Clone App project is responsible for building brand awareness, attracting new users, and retaining existing ones through 
+ strategic campaigns and initiatives. Their tasks include developing marketing plans, running advertising campaigns across digital and traditional channels, and 
+ collaborating with influencers to promote the app.
+
+### 3.17 Legal and Compliance Team
+ The Legal and Compliance Team for the Uber Clone App project ensures that the app operates within the framework of applicable laws and regulations. Their  
+ responsibilities include drafting and reviewing terms of service, privacy policies, and contracts for drivers, passengers, and third-party vendors. The team also 
+ monitors compliance with local transportation laws, data protection regulations (such as GDPR or CCPA), and payment processing standards. They handle legal 
+ disputes, manage liability issues, and advise on intellectual property rights to safeguard the company’s interests. Additionally, the team works proactively to 
+ identify and mitigate legal risks, ensuring that the app remains compliant across various jurisdictions. Their role is vital in fostering trust and maintaining 
+ the app’s reputation in the market.
 
 ## 4. Non-Functional Requirements
 
