@@ -1,15 +1,15 @@
-# Project Scope for Uber Clone
+# Project Scope for Uber Systems
 
 ## Included Features:
 
-### 1. User Registration and Authentication:
-- User sign-up and login via email or phone number.
+### 1. Rider and Driver Registration and Authentication:
+- Rider and driver sign-up and login via email or phone number.
 - Password reset functionality.
-- Profile management for users and drivers.
+- Profile management for riders and drivers.
 
 ### 2. Booking and Ride Management:
-- Users can request a ride by entering pickup and drop-off locations.
-- Real-time location tracking of both drivers and users using GPS.
+- Riders can request a ride by entering pickup and drop-off locations.
+- Real-time location tracking of both drivers and riders using GPS.
 - Estimated fare calculation based on distance and time.
 - Ride confirmation and cancellation options.
 - In-app notifications for ride status (driver on the way, ride started, ride completed).
@@ -23,30 +23,30 @@
 ### 4. Payment Integration:
 - Multiple payment options (credit/debit card, in-app wallet).
 - Automatic fare deduction after ride completion.
-- Payment history for users and drivers.
+- Payment history for riders and drivers.
 
 ### 5. Ratings and Reviews:
-- Users can rate and review drivers after each ride.
-- Drivers can rate users.
+- Riders can rate and review drivers after each ride.
+- Drivers can rate riders.
 
 ### 6. Admin Panel:
-- Dashboard for managing users, drivers, and rides.
+- Dashboard for managing riders, drivers, and rides.
 - Monitoring real-time location of all active rides.
 - Access to ride and payment history.
-- User and driver management (approval, suspension).
+- Rider and driver management (approval, suspension).
 
 ### 7. Push Notifications:
-- Ride request and status updates for users and drivers.
-- Promotions and offers for users.
+- Ride request and status updates for riders and drivers.
+- Promotions and offers for riders.
 
 ### 8. In-app Chat and Support:
-- In-app chat between users and drivers.
+- In-app chat between riders and drivers.
 - In-app customer support and FAQs.
 
 ## Excluded Features:
 
 ### 1. Advanced AI-based Matching:
-- No implementation of complex algorithms for matching users with the most optimal driver based on advanced AI techniques.
+- No implementation of complex algorithms for matching riders with the most optimal driver based on advanced AI techniques.
 
 ### 2. Complex Fare Algorithms:
 - Surge pricing and other complex fare adjustments based on demand are not included.
