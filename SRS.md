@@ -157,9 +157,11 @@ The system will interact with mobile device hardware, including:
 
 
 # Appendix B: Use Case Diagram
+# Happy Path Diagram
 Below is the Use Case Diagram for the happy path of the Uber clone application. It illustrates the primary actors (Rider, Driver, and Admin) and their interactions with the system for key processes like User Registration, Ride Booking, Payment Processing, Rating and Reviews, and Admin Management.
 
-![Use Case Diagram](HappyPath.png)
+![Happy path](https://github.com/user-attachments/assets/835567f6-7cfd-4208-9eef-a3af320e864a)
+
 
 The diagram details the step-by-step flow for each interaction, representing the standard sequence of actions without any exception handling (happy path):
 - Actors:
