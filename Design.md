@@ -3,16 +3,26 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
-The purpose of this Software Design Description (SDD) is to provide a detailed design for the Uber clone ride-hailing application. This document describes the software's architecture, components, interfaces, and their interactions to ensure that the implementation meets the system's functional and non-functional requirements.
+The purpose of this Software Design Description (SDD) is to provide a detailed design for the Uber ride-hailing application. This document describes the software's architecture, components, interfaces, and their interactions to ensure that the implementation meets the system's functional and non-functional requirements.
 
 ### 1.2 Scope
-The Uber clone system enables users to request and pay for rides via a mobile app. Drivers are able to offer services through the same platform. The system includes the mobile application, backend API services, payment processing, real-time communication, and external integration with services like maps and SMS gateways.
+The Uber system enables riders to request and pay for rides via a mobile app. Drivers are able to offer services through the same platform. The system includes the mobile application, backend API services, payment processing, real-time communication, and external integration with services like maps and SMS gateways.
+
+## 2. System Overview
+
+The Uber system is composed of three main modules:
+
+- **Mobile Application** (UI for both riders and drivers)
+- **Backend System** (API and Business Logic)
+- **External Services** (Third-party integrations like Payment Gateway, Maps API, SMS Gateway)
+
+The system operates across Android and iOS devices and communicates with a backend through REST APIs. The backend uses a cloud-hosted, scalable architecture for high availability and performance.
 
 ## 3 Architecture Design
 
 ### 3.1 Architecture Components
 
-### User Interfaces
+#### User Interfaces
 - **Rider App**
   - Registration/Login
   - Ride Booking (Pickup & Drop-off)
@@ -35,7 +45,7 @@ The Uber clone system enables users to request and pay for rides via a mobile ap
 
 ### 3.2 Backend Services
 - **Authentication**  
-  Secure login and token-based user authentication (JWT).  
+  Secure login and token-based rider/driver authentication (JWT).  
 
 - **Ride Management**  
   Matching riders with drivers, tracking ride lifecycle, and calculating fares.  
@@ -50,7 +60,7 @@ The Uber clone system enables users to request and pay for rides via a mobile ap
 
 ### 3.3 Databases
 - **PostgreSQL**  
-  Storing structured data (user profiles, rides, payments).  
+  Storing structured data (rider/driver profiles, rides, payments).  
 
 - **Redis**  
   Caching real-time data (driver locations, active rides).  
@@ -99,7 +109,6 @@ The Uber clone system enables users to request and pay for rides via a mobile ap
 5. **Admin oversight**
    - Admin dashboard displays live analytics and operational metrics.
 
-
 ## 4. Module Design
 
 ### 4.1 Mobile Application (Frontend)
@@ -113,7 +122,7 @@ The UI is designed to be simple, responsive, and easy to use. The UI components 
 - Profile Management
 
 #### 4.1.2 Controller Layer
-Manages user requests and communicates with the service layer for processing. This includes:
+Manages rider/driver requests and communicates with the service layer for processing. This includes:
 - Ride Booking Controller
 - Authentication Controller
 - Payment Controller
@@ -128,44 +137,46 @@ The API Gateway serves as the entry point for all mobile application requests. I
 
 #### 4.2.2 Authentication Service
 Handles:
-- User registration
-- User login
+- Rider/Driver registration
+- Rider/Driver login
 - Password recovery and reset
 
 #### 4.2.3 Ride Management Service
 Handles:
-- **Ride Creation**: Users create ride requests with pickup and drop-off locations.
+- **Ride Creation**: Riders create ride requests with pickup and drop-off locations.
 - **Fare Calculation**: Fare is calculated based on distance and time.
-- **Ride Matching**: Matches users with drivers based on proximity.
+- **Ride Matching**: Matches riders with drivers based on proximity.
+
 #### 4.2.4 Payment Service
 Manages:
 - Payment processing using external payment gateways.
-- Maintaining payment history for users.
+- Maintaining payment history for riders.
 
 #### 4.2.5 Notification Service
-Responsible for sending notifications to users and drivers about ride status changes.
+Responsible for sending notifications to riders and drivers about ride status changes.
 
+## 5. Database Design
+The Uber system uses a NoSQL database (e.g., MongoDB). Below is the database schema for major entities. 
 
-## 5. Database Design The Uber clone uses a NoSQL database (e.g., MongoDB). Below is the database schema for major entities. 
 ![Design](https://github.com/user-attachments/assets/2e0649d3-c90b-45fa-96b2-26930fb27858)
 
-### Explanation: 
-- **Users**: Stores user details like name, contact, preferences.
+### Explanation:
+- **Users**: Stores rider/driver details like name, contact, preferences.
 - **Drivers**: Stores details about drivers, including their vehicle information and ratings.
 - **Rides**: Stores ride-related information like pickup, drop-off, and status.
--  **Payments**: Stores payment transaction details.
-
+- **Payments**: Stores payment transaction details.
 
 ## 6. Interface Design
 
 ### 6.1 API Design
 Below are some of the REST API endpoints for interaction:
-<img width="634" alt="Screenshot 2024-11-07 at 10 28 46 AM" src="https://github.com/user-attachments/assets/7ce242c4-adf0-4954-a18f-e66782a6dacb">
+
+![API Endpoints](https://github.com/user-attachments/assets/7ce242c4-adf0-4954-a18f-e66782a6dacb)
 
 ### 6.2 External System Interfaces
 - **Payment Gateway**: Handles payment transactions (e.g., Stripe, PayPal).
 - **Maps API**: Provides geolocation and mapping services.
-- **SMS Gateway**: Sends notifications to users and drivers (e.g., Twilio).
+- **SMS Gateway**: Sends notifications to riders and drivers (e.g., Twilio).
 
 ### 6.3 Notification Flow Diagram
 This diagram represents the flow of notifications between services.
@@ -187,5 +198,8 @@ The backend must be horizontally scalable.
 Data encryption for sensitive information.
 
 ## 8. Conclusion
-This Software Design Description outlines the architecture, modules, database, and interfaces for the Uber clone system, ensuring the application is robust, scalable, and secure. The use of modular design and external system integration ensures that the system is capable of handling a large number of users and transactions effectively.
+This Software Design Description outlines the architecture, modules, database, and interfaces for the Uber system, ensuring the application is robust, scalable, and secure. The use of modular design and external system integration ensures that the system is capable of handling a large number of riders and drivers effectively.
+
+## Chatgpt prompt
+Create a Software Design Description (SDD) outline for a platform that connects service providers with customers.
 
