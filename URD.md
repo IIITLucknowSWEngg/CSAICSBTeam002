@@ -147,3 +147,6 @@ Uber will be a ride-hailing mobile application that connects riders with drivers
 
 ## 7. Conclusion
 This document defines the user requirements for the Uber application. It serves as a guide for the development team to ensure that the final product meets the needs of the end-users and aligns with the project’s goals.
+
+## Chatgpt prompt used
+Outline a User Requirements Document (URD) for a ride-hailing app, covering key sections .
