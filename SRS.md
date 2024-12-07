@@ -174,3 +174,6 @@ The diagram details the step-by-step flow for each interaction, representing the
 # Error Case Diagram
 
 <img width="630" alt="error_case" src="https://github.com/user-attachments/assets/c576679c-3c14-4726-bc97-d6941b2d3f87">
+
+## Chatgpt prompt
+Create a Software Requirements Specification (SRS) outline for a platform that connects service providers with customers.
