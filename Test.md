@@ -5,7 +5,7 @@
 | **Description**| Verify that a user can successfully register with valid information. |
 | **Precondition** | User is on the registration page.                           |
 | **Steps**      | 1. The user enters valid information (name, email, password). <br> 2. The user submits the registration form. |
-| **Expected Result** | The user should be successfully registered. <br> The user should be redirected to the login page. |
+| **Expected Result** | The user should be successfully registered. <br> The user should be redirected to the login/home/profile/redirectedTo page. |
 | **Status**     | Pending/Pass/Fail                                            |
 
 
