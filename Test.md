@@ -89,6 +89,37 @@ describe('Ride Booking', function() {
 });
 ```
 ---
+
+### *Feature: Driver Acceptance of Ride*
+
+| *Test ID*    | *TC-DR-001*                                               |
+|----------------|-------------------------------------------------------------|
+| *Description*| Verify that the driver accepts a ride request successfully. |
+| *Precondition* | Driver is logged in. <br> There is a ride request available. |
+| *Steps*      | 1. The driver accepts the ride request. |
+| *Expected Result* | The ride status should be updated to "Accepted". <br> The user should receive a notification. |
+| *Status*     | Pending/Pass/Fail                                            |
+## Chai.js Code:
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const driverPage = require('../pages/driverPage');
+const userNotification = require('../pages/userNotification');
+
+describe('Driver Acceptance of Ride', function() {
+  it('should update ride status and notify user', function() {
+    driverPage.open();
+    driverPage.acceptRide();
+    expect(driverPage.getRideStatus()).to.equal('Accepted');
+    expect(userNotification.getNotification()).to.equal('Your ride has been accepted');
+  });
+});
+
+```
+---
+
+
 ### **Feature: Payment Processing**
 
 | **Test ID**    | **TC-PP-001**                                               |
