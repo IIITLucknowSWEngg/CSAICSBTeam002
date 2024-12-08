@@ -23,7 +23,7 @@
 ![6](https://github.com/user-attachments/assets/f217afd7-1850-42b2-a191-8ad6ecf8abc4)
 
 ## Rider
-![7](https://github.com/user-attachments/assets/594c12bc-8acf-4d95-9dfa-da0875a89f21)
+![1](https://github.com/user-attachments/assets/dccc20ea-f1a2-4702-8424-c0fd9897a6f3)
 
 ## Admin
 ![8](https://github.com/user-attachments/assets/b96950c9-1d71-4ae8-a497-1877f592c741)
