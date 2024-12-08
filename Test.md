@@ -176,3 +176,31 @@ describe('User Profile Management', function() {
 });
 ```
 ---
+
+### **Feature: Ride Completion**
+
+| **Test ID**    | **TC-RC-001**                                               |
+|----------------|-------------------------------------------------------------|
+| **Description**| Verify that the driver completes the ride and the user is billed. |
+| **Precondition** | The driver has completed the ride.                         |
+| **Steps**      | 1. The driver ends the ride.                                |
+| **Expected Result** | The user should be billed for the ride. <br> The user should receive a payment receipt. |
+| **Status**     | Pending/Pass/Fail                                            |
+## Chai.js Code:
+
+```javascript
+const chai = require('chai');
+const expect = chai.expect;
+const driverPage = require('../pages/driverPage');
+const paymentPage = require('../pages/paymentPage');
+
+describe('Ride Completion', function() {
+  it('should complete the ride and bill the user', function() {
+    driverPage.open();
+    driverPage.completeRide();
+    expect(driverPage.getRideStatus()).to.equal('Completed');
+    expect(paymentPage.getReceipt()).to.include('Payment successfully processed');
+  });
+});
+```
+---
