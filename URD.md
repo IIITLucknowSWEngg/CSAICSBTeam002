@@ -1,203 +1,157 @@
 # User Requirements Document (URD)
 
-## 1. Introduction
+## 1. Introduction  
 
-### 1.1 Purpose
-This document outlines the user requirements for the Uber application. It is intended to guide the design, development, and testing of the application to ensure that it meets the needs of its users, including riders and drivers.
+### 1.1 Purpose  
+This document outlines my requirements for the Uber application. It will guide the design, development, and testing of the application to ensure that it meets my needs as a user, whether I’m booking rides as a rider or providing rides as a driver.  
 
-### 1.2 Scope
-Uber will be a ride-hailing mobile application that connects riders with drivers. The app will support booking rides, real-time tracking, payment processing, and communication between riders and drivers.
+### 1.2 Scope  
+Uber will be a ride-hailing mobile application connecting me with other users. As a rider, I’ll use it to book rides, track drivers in real-time, and pay seamlessly. As a driver, I’ll use it to manage ride requests and earn income efficiently.  
 
-### 1.3 Definitions, Acronyms, and Abbreviations
-- **Rider/User**: An individual who uses the app to book a ride.
-- **Driver**: An individual who uses the app to offer ride services.
-- **Admin**: The entity responsible for managing and overseeing the app’s operations.
-- **ETA**: Estimated Time of Arrival.
+### 1.3 Definitions, Acronyms, and Abbreviations  
+- **Rider/User**: Someone like me who uses the app to book rides.  
+- **Driver**: Someone offering rides through the app.  
+- **Admin**: The person managing and overseeing the app’s operations.  
+- **ETA**: Estimated Time of Arrival.  
 
-### 1.4 References
-- [Stakeholders.md](https://github.com/IIITLucknowSWEngg/CSAICSBTeam002/blob/main/stakeholders.md)
-- [Project.md](https://github.com/IIITLucknowSWEngg/CSAICSBTeam002/blob/main/Project.md)
-
----
-
-## 2. User Characteristics
-
-### 2.1 Riders
-- Typically smartphone users familiar with basic app navigation.
-- Expect a seamless and quick ride-booking experience.
-- Value real-time updates, transparent pricing, and safety features.
-
-### 2.2 Drivers
-- Smartphone users who need clear, easy-to-follow instructions for accepting and completing rides.
-- Prefer intuitive interfaces for managing ride requests and navigation.
-- Require clear payment details and history tracking.
+### 1.4 References  
+- [Stakeholders.md ](https://github.com/IIITLucknowSWEngg/CSAICSBTeam002/blob/main/stakeholders.md) 
+- [Project.md  ](https://github.com/IIITLucknowSWEngg/CSAICSBTeam002/blob/main/Project.md)
 
 ---
 
-## 3. Functional Requirements
+## 2. User Characteristics  
 
-### 3.1 User Registration and Login
-**Riders and Drivers:**
-- Must be able to register using an email address or phone number.
-- Must be able to log in using their credentials.
-- Password reset functionality should be available.
+### 2.1 Riders  
+As a rider, I’m familiar with basic app navigation on my smartphone. I expect a smooth, quick ride-booking experience with features like real-time updates, transparent pricing, and robust safety features.  
 
-### 3.2 User Profiles
-**Riders:**
-- Must be able to create and edit their profile, including contact information and payment methods.
-- Must be able to view their ride history and payment history.
-
-**Drivers:**
-- Must be able to create and edit their profile, including vehicle information and availability.
-- Must be able to view their ride history, earnings, and ratings.
-
-### 3.3 Ride Booking and Management
-**Riders:**
-- Must be able to enter a pickup and drop-off location.
-- Must be able to view available drivers nearby and their estimated arrival time.
-- Must receive a fare estimate before confirming the ride.
-- Must be able to cancel a ride before it starts.
-- Must receive notifications about the driver’s arrival, ride start, and ride completion.
-
-**Drivers:**
-- Must receive ride requests with details of the pickup location and rider information.
-- Must be able to accept or decline ride requests.
-- Must be able to use in-app navigation to reach the pickup and drop-off locations.
-- Must receive notifications for ride cancellations or changes.
-
-### 3.4 Payment Processing
-**Riders:**
-- Must be able to choose from multiple payment methods (credit/debit card, in-app wallet).
-- Must receive a payment confirmation after the ride is completed.
-- Must be able to view payment history.
-
-**Drivers:**
-- Must be able to track earnings from completed rides.
-- Must receive payment directly to their chosen payout method.
-
-### 3.5 Ratings and Reviews
-**Riders:**
-- Must be able to rate and review drivers after each ride.
-
-**Drivers:**
-- Must be able to rate and review riders after each ride.
-
-### 3.6 Communication
-**Riders and Drivers:**
-- Must be able to communicate via in-app chat or call for coordination.
-- Notifications should be sent for messages received.
-
-### 3.7 Real-Time Tracking
-**Riders:**
-- Must be able to track the driver’s location in real-time after booking the ride.
-
-**Drivers:**
-- Must be able to view the rider’s location for pickup.
-
-### 3.8 Customer Support
-**Riders and Drivers:**
-- Must be able to access customer support through the app.
-- FAQs and help sections should be easily accessible.
-
-### 3.9 Admin Panel
-**Admins:**
-- Must be able to manage users (approve, suspend, or delete accounts).
-- Must be able to view real-time data on active rides.
-- Must be able to access ride and payment history for all users.
+### 2.2 Drivers  
+If I’m a driver, I need an easy-to-use app interface for managing ride requests and navigating to pickup and drop-off locations. I also need clear payment details and a way to track my earnings.  
 
 ---
 
-## 4. Non-Functional Requirements
+## 3. Functional Requirements  
 
-### 4.1 Performance
-- The app must load within 2 seconds under normal network conditions.
-- Ride requests, driver acceptances, and status updates must be processed and displayed to all relevant parties (users and drivers) within 1 second, ensuring real-time synchronization and minimal latency.
+### 3.1 User Registration and Login  
+As a rider or driver:  
+- I must be able to register using my email address or phone number.  
+- I must be able to log in with my credentials.  
+- If I forget my password, I should have the option to reset it.  
 
-### **4.2 Security**
+### 3.2 User Profiles  
 
-- **Data Encryption**:  
-  All user data must be encrypted using **AES-256** for data at rest and **TLS 1.3** for data in transit to protect against unauthorized access.
+#### Riders:  
+- I should be able to create and edit my profile, including contact information and payment methods.  
+- I want access to my ride history and payment records.  
 
-- **Regulatory Compliance**:  
-  The app must adhere to data protection regulations applicable in India, such as:  
-  - **Personal Data Protection Bill (PDPB)** or its successor laws by implementing:  
-    - Explicit user consent for data collection and usage.  
-    - Rights for users to access, modify, and delete their personal data.  
-    - Data anonymization to ensure privacy.  
-  - Compliance with **IT Act, 2000**, ensuring:  
-    - Secure handling of sensitive personal information.  
-    - Protection against unauthorized access, data breaches, and misuse.  
+#### Drivers:  
+- I should be able to set up my profile with details like my vehicle and availability.  
+- I need access to my ride history, earnings, and ratings.  
 
+### 3.3 Ride Booking and Management  
 
-- **User Authentication**:  
-  Authentication must include:  
-  - Secure password policies (minimum 8 characters, including uppercase, lowercase, numbers, and symbols).  
-  - Multi-factor authentication (e.g., OTP via SMS or email, or authenticator apps).
+#### Riders:  
+- I want to input my pickup and drop-off locations.  
+- I should see available drivers nearby and their estimated arrival time (ETA).  
+- I need a fare estimate before confirming a ride.  
+- I want the option to cancel a ride before it starts.  
+- I expect notifications for the driver’s arrival, ride start, and completion.  
 
-- **Access Control**:  
-  Implement **Role-Based Access Control (RBAC)** to restrict access to sensitive features or data based on user roles.
+#### Drivers:  
+- I need ride requests with clear pickup and rider details.  
+- I should be able to accept or decline requests.  
+- I need in-app navigation for pickup and drop-off locations.  
+- I should receive notifications about cancellations or changes.  
 
+### 3.4 Payment Processing  
 
-### **4.3 Usability**
+#### Riders:  
+- I want to choose from multiple payment options (credit/debit cards, in-app wallet).  
+- I need a payment confirmation after my ride.  
+- I want access to my payment history.  
 
-- **Intuitive Design**:  
-  The app must have a clear, user-friendly interface with minimal learning curve, ensuring:  
-  - Riders can book rides, and drivers can accept requests within three taps or fewer.
+#### Drivers:  
+- I want to track my earnings from rides.  
+- I need payments sent directly to my chosen payout method.  
 
-- **Navigation**:  
-  Logical workflows and clearly labeled buttons/icons must guide users through tasks such as:  
-  - Ride booking, accepting requests, and payment completion without confusion.
+### 3.5 Ratings and Reviews  
 
-- **Responsive UI**:  
-  The app must maintain full functionality and visual consistency on devices with screen sizes ranging from **4 inches to 10 inches** (smartphones and tablets).
+#### Riders:  
+- After a ride, I want to rate and review the driver.  
 
-- **Accessibility**:  
-  The app must comply with **WCAG 2.1 Level AA** standards, including:  
-  - High-contrast text and color schemes.  
-  - Support for screen readers.  
-  - Adjustable font sizes.  
-  - Touch-friendly buttons with a minimum size of **48x48 pixels**.
+#### Drivers:  
+- I should be able to rate and review riders after rides.  
 
+### 3.6 Communication  
+- I should be able to chat or call drivers/riders through the app.  
+- I need notifications for messages received.  
 
-### 4.4 Reliability
-- The app must be available 99.9% of the time, with minimal downtime.
-- Backup systems should ensure data is not lost in case of server failure.
+### 3.7 Real-Time Tracking  
 
-### **4.5 Scalability**
+#### Riders:  
+- I want to track the driver’s location in real-time.  
 
-- **Performance Under Load**:  
-  The app must handle up to **10,000 concurrent users** initially and scale to support **100,000 concurrent users** within 12 months without degradation in performance (e.g., maintaining response times under 2 seconds).
+#### Drivers:  
+- I should see the rider’s location for pickup.  
 
-- **Elastic Infrastructure**:  
-  The backend must leverage scalable cloud infrastructure (e.g., AWS, Azure, or Google Cloud) to dynamically allocate resources based on user demand, ensuring cost-efficiency and high availability.
+### 3.8 Customer Support  
+- I need an easy way to contact support within the app.  
+- FAQs and a help section should be available.  
 
-- **Modular Architecture**:  
-  The backend must be designed with a **microservices architecture**, enabling the independent deployment and scaling of services (e.g., authentication, ride management, payment processing).
-
-- **Support for New Features**:  
-  The system must support the seamless addition of new features or updates (e.g., ride-sharing, multi-stop rides) without requiring significant rework to existing components or downtime.
-
-- **Database Scalability**:  
-  The database must support horizontal scaling, allowing for efficient handling of increased data volume and ensuring consistency and reliability through techniques like sharding and replication.
-
-
----
-
-## 5. Assumptions and Dependencies
-- The app will rely on third-party services for map integration, payment processing, and notifications.
-- The project assumes that users will have access to smartphones and stable internet connections.
+### 3.9 Admin Panel  
+If I were an admin:  
+- I should be able to manage user accounts (approve, suspend, or delete them).  
+- I want to view real-time data on active rides.  
+- I need access to ride and payment histories for all users.  
 
 ---
 
-## 6. Acceptance Criteria
-- The app must pass all functional and non-functional tests.
-- User feedback during the beta testing phase must be addressed before the final release.
-- The app must meet all security and performance benchmarks outlined in this document.
+## 4. Non-Functional Requirements  
+
+### 4.1 Performance  
+- I expect the app to load within 2 seconds under normal network conditions.  
+- Ride requests, acceptances, and updates should process and display in under 1 second.  
+
+### 4.2 Security  
+#### Data Encryption  
+- My data must be encrypted using AES-256 (at rest) and TLS 1.3 (in transit).  
+
+#### Regulatory Compliance  
+- The app must comply with Indian data protection laws like the **Personal Data Protection Bill (PDPB)** and the **IT Act, 2000**, ensuring explicit consent, rights for data access/modification/deletion, and data anonymization.  
+
+#### User Authentication  
+- Password policies must enforce strong passwords and support multi-factor authentication (e.g., OTPs).  
+
+#### Access Control  
+- Role-based access should ensure I only see features relevant to my role.  
+
+### 4.3 Usability  
+- The app must be intuitive, guiding me through ride booking and payments in three taps or less.  
+- The UI should work consistently across devices, from 4-inch phones to 10-inch tablets.  
+- Accessibility features like high contrast and touch-friendly buttons must comply with WCAG 2.1 Level AA.  
+
+### 4.4 Reliability  
+- The app should be available 99.9% of the time.  
+- Backup systems must ensure no data loss during server failures.  
+
+### 4.5 Scalability  
+- The app must support up to 10,000 users initially and scale to 100,000 users in 12 months without performance issues.  
+- A modular backend should allow new features without major disruptions.  
 
 ---
 
-## 7. Conclusion
-This document defines the user requirements for the Uber application. It serves as a guide for the development team to ensure that the final product meets the needs of the end-users and aligns with the project’s goals.
+## 5. Assumptions and Dependencies  
+- I assume users like me will have access to smartphones and stable internet.  
+- Third-party services will handle maps, payments, and notifications.  
 
-## Chatgpt prompt used
-Outline a User Requirements Document (URD) for a ride-hailing app, covering key sections .
+---
+
+## 6. Acceptance Criteria  
+- The app must pass all functional and non-functional tests.  
+- Feedback during beta testing must be resolved before release.  
+- The app must meet outlined security and performance standards.  
+
+---
+
+## 7. Conclusion  
+This document defines my requirements for the Uber application. It will guide the team to create an app that meets my expectations as a user, whether I’m booking or offering rides, and aligns with the project’s goals.  
