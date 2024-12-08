@@ -1,16 +1,14 @@
-# Feature: User Registration
+### **Feature: User Registration**
 
-## Scenario: User registers successfully
+| **Test ID**    | **TC-REG-001**                                               |
+|----------------|--------------------------------------------------------------|
+| **Description**| Verify that a user can successfully register with valid information. |
+| **Precondition** | User is on the registration page.                           |
+| **Steps**      | 1. The user enters valid information (name, email, password). <br> 2. The user submits the registration form. |
+| **Expected Result** | The user should be successfully registered. <br> The user should be redirected to the login page. |
+| **Status**     | Pending/Pass/Fail                                            |
 
-### Given:
-The user is on the registration page.
 
-### When:
-The user enters valid information (name, email, password).
-
-### Then:
-The user should be successfully registered.  
-The user should be redirected to the login page.
 
 ## Chai.js Code:
 
@@ -29,22 +27,18 @@ describe('User Registration', function() {
   });
 });
 ```
+---
 
-# Feature: User Login
+### **Feature: User Login**
 
-## Scenario: User logs in with valid credentials
+| **Test ID**    | **TC-LOG-001**                                               |
+|----------------|--------------------------------------------------------------|
+| **Description**| Verify that a user can successfully log in with valid credentials. |
+| **Precondition** | User is on the login page.                                  |
+| **Steps**      | 1. The user enters valid credentials (email, password). <br> 2. The user submits the login form. |
+| **Expected Result** | The user should be successfully logged in. <br> The user should be redirected to the dashboard. |
+| **Status**     | Pending/Pass/Fail                                            |
 
-### Given:
-
-
-The user is on the login page.
-
-### When:
-The user enters valid credentials (email, password).
-
-### Then:
-The user should be successfully logged in.  
-The user should be redirected to the dashboard.
 
 ## Chai.js Code:
 
@@ -63,22 +57,18 @@ describe('User Login', function() {
   });
 });
 ```
+---
+### **Feature: Ride Booking**
 
-# Feature: Ride Booking
+| **Test ID**    | **TC-RB-001**                                               |
+|----------------|--------------------------------------------------------------|
+| **Description**| Verify that the user can successfully book a ride.           |
+| **Precondition** | User is logged in and on the ride booking page.             |
+| **Steps**      | 1. The user enters valid pickup and drop-off locations. <br> 2. The user selects a payment method. <br> 3. The user submits the booking. |
+| **Expected Result** | The ride should be successfully booked. <br> The user should receive a confirmation message. |
+| **Status**     | Pending/Pass/Fail                                            |
 
-## Scenario: User books a ride successfully
 
-### Given:
-The user is logged in.  
-The user is on the ride booking page.
-
-### When:
-The user enters valid pickup and drop-off locations.  
-The user selects a payment method.
-
-### Then:
-The ride should be successfully booked.  
-The user should receive a confirmation message.
 
 ## Chai.js Code:
 
@@ -98,19 +88,17 @@ describe('Ride Booking', function() {
   });
 });
 ```
-# Feature: Payment Processing
+---
+### **Feature: Payment Processing**
 
-## Scenario: User completes a payment for a ride
+| **Test ID**    | **TC-PP-001**                                               |
+|----------------|--------------------------------------------------------------|
+| **Description**| Verify that the user can successfully complete payment for a ride. |
+| **Precondition** | User has a ride booked.                                     |
+| **Steps**      | 1. The user selects a payment method and enters payment details. <br> 2. The user submits the payment. |
+| **Expected Result** | The payment should be processed successfully. <br> The user should receive a payment confirmation. |
+| **Status**     | Pending/Pass/Fail                                            |
 
-### Given:
-The user has a ride booked.
-
-### When:
-The user selects a payment method and enters payment details.
-
-### Then:
-The payment should be processed successfully.  
-The user should receive a payment confirmation.
 
 ## Chai.js Code:
 
@@ -129,21 +117,20 @@ describe('Payment Processing', function() {
   });
 });
 ```
+---
 
 
+### **Feature: Ride Status Update**
 
-# Feature: Ride Status Update
+| **Test ID**    | **TC-RSU-001**                                              |
+|----------------|-------------------------------------------------------------|
+| **Description**| Verify that the user can view the current status of their ride. |
+| **Precondition** | User has a ride booked.                                    |
+| **Steps**      | 1. The user navigates to the ride status page. <br> 2. The user checks the current status of the ride. |
+| **Expected Result** | The user should see the current status of their ride (e.g., "Ride is on the way"). |
+| **Status**     | Pending/Pass/Fail                                            |
 
-## Scenario: User checks the status of their ride
 
-### Given:
-The user has a ride booked.
-
-### When:
-The user navigates to the ride status page.
-
-### Then:
-The user should see the current status of their ride.
 
 ## Chai.js Code:
 
@@ -160,19 +147,18 @@ describe('Ride Status Update', function() {
   });
 });
 ```
-# Feature: User Profile Management
+---
 
-## Scenario: User updates their profile successfully
+### **Feature: User Profile Management**
 
-### Given:
-The user is logged in.
+| **Test ID**    | **TC-UPM-001**                                               |
+|----------------|--------------------------------------------------------------|
+| **Description**| Verify that the user can successfully update their profile. |
+| **Precondition** | User is logged in.                                          |
+| **Steps**      | 1. The user navigates to the profile page. <br> 2. The user updates their profile information (name, email). <br> 3. The user saves the changes. |
+| **Expected Result** | The profile should be updated successfully. |
+| **Status**     | Pending/Pass/Fail                                            |
 
-### When:
-The user navigates to the profile page.  
-The user updates their profile information.
-
-### Then:
-The profile should be updated successfully.
 
 ## Chai.js Code:
 
@@ -189,3 +175,4 @@ describe('User Profile Management', function() {
   });
 });
 ```
+---
