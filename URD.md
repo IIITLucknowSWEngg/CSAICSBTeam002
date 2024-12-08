@@ -111,24 +111,75 @@ Uber will be a ride-hailing mobile application that connects riders with drivers
 
 ### 4.1 Performance
 - The app must load within 2 seconds under normal network conditions.
-- Ride requests and updates must be processed in real-time.
+- Ride requests, driver acceptances, and status updates must be processed and displayed to all relevant parties (users and drivers) within 1 second, ensuring real-time synchronization and minimal latency.
 
-### 4.2 Security
-- User data must be encrypted in transit and at rest.
-- The app must comply with data protection regulations (e.g., GDPR).
-- User authentication must be secure, with options for multi-factor authentication.
+### **4.2 Security**
 
-### 4.3 Usability
-- The app must be intuitive and easy to navigate for both riders and drivers.
-- The UI must be responsive and accessible on devices with various screen sizes.
+- **Data Encryption**:  
+  All user data must be encrypted using **AES-256** for data at rest and **TLS 1.3** for data in transit to protect against unauthorized access.
+
+- **Regulatory Compliance**:  
+  The app must adhere to data protection regulations applicable in India, such as:  
+  - **Personal Data Protection Bill (PDPB)** or its successor laws by implementing:  
+    - Explicit user consent for data collection and usage.  
+    - Rights for users to access, modify, and delete their personal data.  
+    - Data anonymization to ensure privacy.  
+  - Compliance with **IT Act, 2000**, ensuring:  
+    - Secure handling of sensitive personal information.  
+    - Protection against unauthorized access, data breaches, and misuse.  
+
+
+- **User Authentication**:  
+  Authentication must include:  
+  - Secure password policies (minimum 8 characters, including uppercase, lowercase, numbers, and symbols).  
+  - Multi-factor authentication (e.g., OTP via SMS or email, or authenticator apps).
+
+- **Access Control**:  
+  Implement **Role-Based Access Control (RBAC)** to restrict access to sensitive features or data based on user roles.
+
+
+### **4.3 Usability**
+
+- **Intuitive Design**:  
+  The app must have a clear, user-friendly interface with minimal learning curve, ensuring:  
+  - Riders can book rides, and drivers can accept requests within three taps or fewer.
+
+- **Navigation**:  
+  Logical workflows and clearly labeled buttons/icons must guide users through tasks such as:  
+  - Ride booking, accepting requests, and payment completion without confusion.
+
+- **Responsive UI**:  
+  The app must maintain full functionality and visual consistency on devices with screen sizes ranging from **4 inches to 10 inches** (smartphones and tablets).
+
+- **Accessibility**:  
+  The app must comply with **WCAG 2.1 Level AA** standards, including:  
+  - High-contrast text and color schemes.  
+  - Support for screen readers.  
+  - Adjustable font sizes.  
+  - Touch-friendly buttons with a minimum size of **48x48 pixels**.
+
 
 ### 4.4 Reliability
 - The app must be available 99.9% of the time, with minimal downtime.
 - Backup systems should ensure data is not lost in case of server failure.
 
-### 4.5 Scalability
-- The app must be able to handle a growing number of users without degradation in performance.
-- The backend should support the addition of new features without significant rework.
+### **4.5 Scalability**
+
+- **Performance Under Load**:  
+  The app must handle up to **10,000 concurrent users** initially and scale to support **100,000 concurrent users** within 12 months without degradation in performance (e.g., maintaining response times under 2 seconds).
+
+- **Elastic Infrastructure**:  
+  The backend must leverage scalable cloud infrastructure (e.g., AWS, Azure, or Google Cloud) to dynamically allocate resources based on user demand, ensuring cost-efficiency and high availability.
+
+- **Modular Architecture**:  
+  The backend must be designed with a **microservices architecture**, enabling the independent deployment and scaling of services (e.g., authentication, ride management, payment processing).
+
+- **Support for New Features**:  
+  The system must support the seamless addition of new features or updates (e.g., ride-sharing, multi-stop rides) without requiring significant rework to existing components or downtime.
+
+- **Database Scalability**:  
+  The database must support horizontal scaling, allowing for efficient handling of increased data volume and ensuring consistency and reliability through techniques like sharding and replication.
+
 
 ---
 
