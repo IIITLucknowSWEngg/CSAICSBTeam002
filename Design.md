@@ -200,6 +200,8 @@ Data encryption for sensitive information.
 ## 8. Conclusion
 This Software Design Description outlines the architecture, modules, database, and interfaces for the Uber system, ensuring the application is robust, scalable, and secure. The use of modular design and external system integration ensures that the system is capable of handling a large number of riders and drivers effectively.
 
+### Official Uber Design reference : https://base.uber.com/6d2425e9f/p/294ab4-base-design-system
+
 ## Chatgpt prompt
 Create a Software Design Description (SDD) outline for a platform that connects service providers with customers.
 
