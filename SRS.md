@@ -18,9 +18,9 @@ The Uber application is a ride-hailing platform that enables drivers and riders 
 
 ### 1.4 References
 - IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications  
-- SWEBOK v3.0, Software Engineering Body of Knowledge  
-- Stakeholders.md  
-- User Requirements Document  
+- SWEBOK v4.0, Software Engineering Body of Knowledge  
+- [Stakeholders.md  ](https://github.com/IIITLucknowSWEngg/CSAICSBTeam002/blob/main/stakeholders.md)
+- [User Requirements Document](https://github.com/IIITLucknowSWEngg/CSAICSBTeam002/blob/main/URD.md)  
 
 ### 1.5 Overview
 This document is organized into several sections that describe the overall system, functional requirements, non-functional requirements, and other considerations relevant to the development and implementation of the Uber application.
