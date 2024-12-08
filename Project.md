@@ -68,4 +68,4 @@
 - Excludes integration with third-party services like map providers (other than basic Google Maps integration), external payment gateways, or CRM systems.
 
 ### 8. Multi-Platform Launch:
-- Focus will be on one platform initially (e.g., Android), excluding a simultaneous launch on multiple platforms (e.g., iOS, web).
+- Focus will be on one platform initially (e.g., Android, iOS), excluding a simultaneous launch on multiple platforms (e.g. web).
