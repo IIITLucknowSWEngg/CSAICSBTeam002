@@ -181,23 +181,7 @@ Below are some of the REST API endpoints for interaction:
 ### 6.3 Notification Flow Diagram
 This diagram represents the flow of notifications between services.
 
-## 7. Non-Functional Requirements
-
-![Design](https://github.com/user-attachments/assets/7fc22453-68b7-4634-8b21-4158d7976f6c)
-
-### 7.1 Performance
-The system should handle at least 10,000 simultaneous users.
-
-### 7.2 Scalability
-The backend must be horizontally scalable.
-
-### 7.3 Availability
-99.9% uptime with redundancy in critical components.
-
-### 7.4 Security
-Data encryption for sensitive information.
-
-## 8. Conclusion
+## Conclusion
 This Software Design Description outlines the architecture, modules, database, and interfaces for the Uber system, ensuring the application is robust, scalable, and secure. The use of modular design and external system integration ensures that the system is capable of handling a large number of riders and drivers effectively.
 
 ###  Uber Design reference : https://base.uber.com/6d2425e9f/p/294ab4-base-design-system
