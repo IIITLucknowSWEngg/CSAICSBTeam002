@@ -31,7 +31,7 @@ This document is organized into several sections that describe the overall syste
 The Uber application is an independent system designed to operate on mobile devices. It interfaces with external systems such as payment gateways, GPS services, and third-party APIs for map integration. The system will be built using a modular architecture to facilitate scalability and maintainability.
 
 ### 2.2 Product Functions
-- Rider/Driver registration and authentication.  
+- Rider, Driver and Admin registration and authentication.  
 - Ride booking and management.  
 - Real-time driver tracking.  
 - Payment processing and history tracking.  
