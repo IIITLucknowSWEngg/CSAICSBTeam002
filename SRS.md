@@ -52,18 +52,18 @@ The application will operate on Android and iOS mobile platforms. It will requir
 - Dependency on third-party services for payments and GPS tracking.  
 
 ### 2.6 Assumptions and Dependencies
-- Users have access to smartphones with stable internet connections.  
+- Drivers, Riders and Admin have access to smartphones with stable internet connections.  
 - Integration with third-party services is stable and reliable.  
 - The application will initially support only one currency and language.  
 
 ## 3. System Features
 
-### 3.1 User Registration and Authentication
-**Description:** Users can register using email or phone numbers. The system supports secure login and password recovery.
+### 3.1 Drivers, Riders and Admin Registration and Authentication
+**Description:** Drivers, Riders and Admin can register using email or phone numbers. The system supports secure login and password recovery.
 
 **Functional Requirements:**  
-- The system shall allow users to register with an email or phone number.  
-- The system shall send a verification code to the user for account activation.  
+- The system shall allow Drivers, Riders and Admin to register with an email or phone number.  
+- The system shall send a verification code to the Drivers, Riders and Admin for account activation.  
 - The system shall support password recovery via email or SMS.  
 
 ### 3.2 Ride Booking
@@ -112,9 +112,17 @@ The system will interact with mobile device hardware, including:
 ## 5. Non-Functional Requirements (NFRs)
 
 ### 5.1 Performance Requirements
-- The application shall load within 2 seconds on mobile devices under normal network conditions.  
-- The system shall handle up to 10,000 concurrent users without performance degradation.  
-- Ride requests shall be processed and matched with drivers within 5 seconds.  
+
+- The application shall load within 2 seconds on mobile devices under **normal network conditions**, defined as:
+  - 4G LTE or higher network (or Wi-Fi with moderate speed).
+  - Average download speed of at least 5 Mbps on mobile networks and 10 Mbps on Wi-Fi.
+  - Latency (response time) under 200 ms for 4G/5G and Wi-Fi networks.
+  - Stable network conditions with minimal congestion and no significant signal interference.
+
+- The system shall handle up to 10,000 concurrent users without performance degradation.
+
+- Ride requests shall be processed and matched with drivers within 5 seconds, ensuring real-time, efficient processing of requests to provide seamless user experience during peak demand times.
+
 
 ### 5.2 Security Requirements
 - User data shall be encrypted both in transit (using TLS) and at rest (using AES-256).  
@@ -142,7 +150,7 @@ The system will interact with mobile device hardware, including:
 - The system shall support automated testing to ensure that new updates do not introduce regressions.  
 
 ### 5.7 Compliance
-- The system shall comply with relevant data protection regulations, including GDPR.  
+- The system shall comply with relevant data protection regulations, including Personal Data Protection Bill (PDPB) and the IT Act, 2000.  
 - Payment processing shall adhere to PCI-DSS standards.  
 - The system shall include features for user data export and deletion to comply with privacy regulations.  
 
@@ -151,12 +159,12 @@ The system will interact with mobile device hardware, including:
 - **Ethical Requirements:** The application shall include features to prevent misuse, such as reporting mechanisms for inappropriate behavior by drivers or riders.  
 
 ## 7. Appendices
-- **Appendix A:** Glossary of Terms  
-- **Appendix B:** Diagrams (System Architecture, Use Case Diagrams)  
-- **Appendix C:** Detailed Requirements Matrix  
+
+- **Appendix A:** Diagrams (System Architecture, Use Case Diagrams)  
+- **Appendix B:** [Cross Reference Matrix](https://github.com/IIITLucknowSWEngg/CSAICSBTeam002/blob/main/Cross%20Reference%20Matrix.md)  
 
 
-# Appendix B: Use Case Diagram
+# Appendix A: Use Case Diagram
 # Happy Path Diagram
 Below is the Use Case Diagram for the happy path of the Uber clone application. It illustrates the primary actors (Rider, Driver, and Admin) and their interactions with the system for key processes like User Registration, Ride Booking, Payment Processing, Rating and Reviews, and Admin Management.
 
