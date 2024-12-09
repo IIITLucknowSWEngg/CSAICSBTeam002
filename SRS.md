@@ -47,7 +47,7 @@ The Uber application is an independent system designed to operate on mobile devi
 The application will operate on Android and iOS mobile platforms. It will require internet connectivity for real-time functionalities like ride booking, payment processing, and GPS tracking. The backend will be hosted on cloud servers with high availability and reliability.
 
 ### 2.5 Design and Implementation Constraints
-- Must comply with data protection regulations (e.g., GDPR).  
+- Must comply with data protection regulations (e.g., Personal Data Protection Bill (PDPB)).  
 - Limited by the performance and capabilities of mobile devices.  
 - Dependency on third-party services for payments and GPS tracking.  
 
