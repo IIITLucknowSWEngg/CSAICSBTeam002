@@ -15,6 +15,6 @@
 # Project Name : Uber Clone 
 ## link to the GitHub Issue to record the approval : https://github.com/IIITLucknowSWEngg/Assignment/issues/3
 
-#Viva ScreenShot
+# Viva ScreenShot
 ![viva_ss](https://github.com/user-attachments/assets/45910cd0-6ce7-477a-a541-4e54476f0b9e)
 
