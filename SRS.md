@@ -179,6 +179,13 @@ The diagram details the step-by-step flow for each interaction, representing the
 
 # Abuse Case Diagram
 
+- Actors:
+  -Attacker: Engages in sophisticated exploits, such as SQL injection, Cross-Site Scripting (XSS), or phishing attempts, which lead to trust loss and data breaches.
+  -Malicious Host: Posts unauthorized property listings, generates fake reviews to manipulate rankings, or engages in payment fraud.
+  -Fraudulent User: Creates fake bookings, abuses shared credentials, or performs automated actions that lead to revenue loss.
+  -Bot Network: Exploits APIs, scrapes property metadata, floods the system with irrelevant content, or causes performance degradation.
+
+
 ![Abuse Case Diagram](https://github.com/user-attachments/assets/77b92713-a86a-4e54-97c7-2dabc33c9418)
 
 # Error Case Diagram
