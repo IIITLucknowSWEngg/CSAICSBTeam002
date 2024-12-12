@@ -180,27 +180,16 @@ The diagram details the step-by-step flow for each interaction, representing the
 # Abuse Case Diagram
 
 - Actors:
-  -Attacker: Engages in sophisticated exploits, such as SQL injection, Cross-Site Scripting (XSS), or phishing attempts, which lead to trust loss and data breaches.
-  -Malicious Host: Posts unauthorized property listings, generates fake reviews to manipulate rankings, or engages in payment fraud.
-  -Fraudulent User: Creates fake bookings, abuses shared credentials, or performs automated actions that lead to revenue loss.
-  -Bot Network: Exploits APIs, scrapes property metadata, floods the system with irrelevant content, or causes performance degradation.
+  - Attacker: Engages in sophisticated exploits, such as SQL injection, Cross-Site Scripting (XSS), or phishing attempts, which lead to trust loss and data breaches.
+  - Malicious Host: Posts unauthorized property listings, generates fake reviews to manipulate rankings, or engages in payment fraud.
+  - Fraudulent User: Creates fake bookings, abuses shared credentials, or performs automated actions that lead to revenue loss.
+  - Bot Network: Exploits APIs, scrapes property metadata, floods the system with irrelevant content, or causes performance degradation.
 
 
 ![Abuse Case Diagram](https://github.com/user-attachments/assets/77b92713-a86a-4e54-97c7-2dabc33c9418)
 
 # Error Case Diagram
 
-SQL Injection and XSS: Implement input validation, sanitize all user inputs, and use secure coding practices to block such attacks.
-
-Overbooking and Fake Engagement: Employ automated validation of bookings and AI-powered review moderation to prevent abuse.
-
-Unauthorized Hosting: Regularly verify host identities and listings using advanced verification processes.
-
-Data Breaches: Enforce encryption, firewalls, and multi-layered security to protect sensitive user data.
-
-API Exploitation: Limit API usage through rate-limiting and authentication protocols.
-
-Trust Loss and Revenue Impact: Maintain transparency and communicate clearly with affected users during incident handling.
 
 <img width="630" alt="error_case" src="https://github.com/user-attachments/assets/c576679c-3c14-4726-bc97-d6941b2d3f87">
 
