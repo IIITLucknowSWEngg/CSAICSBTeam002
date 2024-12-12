@@ -112,17 +112,13 @@ The system will interact with mobile device hardware, including:
 ## 5. Non-Functional Requirements (NFRs)
 
 ### 5.1 Performance Requirements
-
 - The application shall load within 2 seconds on mobile devices under **normal network conditions**, defined as:
   - 4G LTE or higher network (or Wi-Fi with moderate speed).
   - Average download speed of at least 5 Mbps on mobile networks and 10 Mbps on Wi-Fi.
   - Latency (response time) under 200 ms for 4G/5G and Wi-Fi networks.
   - Stable network conditions with minimal congestion and no significant signal interference.
-
 - The system shall handle up to 10,000 concurrent users without performance degradation.
-
 - Ride requests shall be processed and matched with drivers within 5 seconds, ensuring real-time, efficient processing of requests to provide seamless user experience during peak demand times.
-
 
 ### 5.2 Security Requirements
 - User data shall be encrypted both in transit (using TLS) and at rest (using AES-256).  
@@ -159,7 +155,6 @@ The system will interact with mobile device hardware, including:
 - **Ethical Requirements:** The application shall include features to prevent misuse, such as reporting mechanisms for inappropriate behavior by drivers or riders.  
 
 ## 7. Appendices
-
 - **Appendix A:** Diagrams (System Architecture, Use Case Diagrams)  
 - **Appendix B:** [Cross Reference Matrix](https://github.com/IIITLucknowSWEngg/CSAICSBTeam002/blob/main/Cross%20Reference%20Matrix.md)  
 
@@ -179,17 +174,9 @@ The diagram details the step-by-step flow for each interaction, representing the
 
 # Abuse Case Diagram
 
-- Actors:
-  - Attacker: Engages in sophisticated exploits, such as SQL injection, Cross-Site Scripting (XSS), or phishing attempts, which lead to trust loss and data breaches.
-  - Malicious Host: Posts unauthorized property listings, generates fake reviews to manipulate rankings, or engages in payment fraud.
-  - Fraudulent User: Creates fake bookings, abuses shared credentials, or performs automated actions that lead to revenue loss.
-  - Bot Network: Exploits APIs, scrapes property metadata, floods the system with irrelevant content, or causes performance degradation.
-
-
 ![Abuse Case Diagram](https://github.com/user-attachments/assets/77b92713-a86a-4e54-97c7-2dabc33c9418)
 
 # Error Case Diagram
-
 
 <img width="630" alt="error_case" src="https://github.com/user-attachments/assets/c576679c-3c14-4726-bc97-d6941b2d3f87">
 
