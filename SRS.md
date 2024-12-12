@@ -183,6 +183,18 @@ The diagram details the step-by-step flow for each interaction, representing the
 
 # Error Case Diagram
 
+SQL Injection and XSS: Implement input validation, sanitize all user inputs, and use secure coding practices to block such attacks.
+
+Overbooking and Fake Engagement: Employ automated validation of bookings and AI-powered review moderation to prevent abuse.
+
+Unauthorized Hosting: Regularly verify host identities and listings using advanced verification processes.
+
+Data Breaches: Enforce encryption, firewalls, and multi-layered security to protect sensitive user data.
+
+API Exploitation: Limit API usage through rate-limiting and authentication protocols.
+
+Trust Loss and Revenue Impact: Maintain transparency and communicate clearly with affected users during incident handling.
+
 <img width="630" alt="error_case" src="https://github.com/user-attachments/assets/c576679c-3c14-4726-bc97-d6941b2d3f87">
 
 ## Chatgpt prompt
