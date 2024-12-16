@@ -1,7 +1,7 @@
 # CSAICSBTeam002
 # Team Name : Task Force
 # Team Members :
-| **Name**            | **Course** | **Batch**     | **Student ID** | **Email**                              | **Password**         |
+| **Name**            | **Course** | **Batch**     | **Student ID** | **Email**                              | **GitHub ID**         |
 |---------------------|------------|---------------|----------------|----------------------------------------|----------------------|
 | Erin Helga D Silva  | CSB        | LCB2023026    | erinhdsilva    | erinhdsilva@gmail.com                  | erinhdsilva          |
 | Ujjwal Goyal        | CSB        | LCB2023013    | ujjwalgoyal    | ujjwalgoyal.ajmercity@gmail.com        | Ujjwal0207           |
