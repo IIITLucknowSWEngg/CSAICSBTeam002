@@ -1,33 +1,66 @@
 # System Context  Diagram
 
-![1](https://github.com/user-attachments/assets/02d3c1c0-b3f8-40f0-9313-43dca94f0fe5)
+
+![Systemcontext](https://github.com/user-attachments/assets/857dbd57-1cb1-409a-80f2-159bed3e5fe0)
 
 
 # Container Diagram
-## Driver
+## Backend
 
-![3](https://github.com/user-attachments/assets/61e0c853-333d-4e3c-8d92-f35e5adcc650)
-
-## Rider
-
-![5](https://github.com/user-attachments/assets/38e250cc-680e-46ac-8d6b-6eed357d3a3e)
+![backendcontainer](https://github.com/user-attachments/assets/f807d8f3-d018-4a88-8995-5b5e1323c649)
 
 
-## Admin
+## Notification Flow
 
-![4](https://github.com/user-attachments/assets/467ebabe-1df2-472a-a793-3cd0847044b3)
+
+![notificationcontainer](https://github.com/user-attachments/assets/85f6577d-38b3-4fdd-8f23-27a6b3c2b569)
+
+
+## Payment Processing
+
+![paymentconatiner](https://github.com/user-attachments/assets/4717a10a-85df-42ff-af95-35ea522fd457)
+
+## Admin Panel
+
+![admin](https://github.com/user-attachments/assets/f40ca5f5-d3de-4204-81eb-08e311dd32db)
+
+
+
 
 # Component Diagram
 
-## Driver
-![6](https://github.com/user-attachments/assets/f217afd7-1850-42b2-a191-8ad6ecf8abc4)
+## User Authentication
 
-## Rider
-![1](https://github.com/user-attachments/assets/dccc20ea-f1a2-4702-8424-c0fd9897a6f3)
+![userauth](https://github.com/user-attachments/assets/90ab2f55-5691-46c5-aaa0-35dc93a0ee7d)
 
-## Admin
-![8](https://github.com/user-attachments/assets/b96950c9-1d71-4ae8-a497-1877f592c741)
+## Ride Booking and Management
+![ridebook](https://github.com/user-attachments/assets/1dd9ff39-5b5b-4b86-8088-5217c12714eb)
+
+
+## Payment Processing
+![pay](https://github.com/user-attachments/assets/4d194c53-7775-40f1-bbaf-3e6d2b7559d3)
+
+## Notifications
+
+![notification](https://github.com/user-attachments/assets/3fcbf35e-482f-4e24-a00c-8084ea30e192)
+
+## Admin Panel
+![adminpanel](https://github.com/user-attachments/assets/3d9293fc-c5e0-4f91-9af3-b0d9d6258cb5)
+
+## Real-Time Location Tracking
+
+![location](https://github.com/user-attachments/assets/f57b6334-3b4e-497c-9a97-353ecbbc4da3)
+
+## Ratings and Reviews
+![ratings](https://github.com/user-attachments/assets/cd952312-f54b-4615-904e-e78b68ec3182)
+
+## Customer Support
+
+![customer](https://github.com/user-attachments/assets/37809b24-593d-494c-999d-370415d23a46)
+
+
 
 # Deployment Diagram
-![9](https://github.com/user-attachments/assets/bfd280e5-2558-429b-904b-4a0217ca7543)
+![deployment](https://github.com/user-attachments/assets/941f358a-2866-4d10-bab3-be4ab7a670ed)
+
 
