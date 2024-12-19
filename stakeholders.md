@@ -3,7 +3,7 @@
 ## Overview
 This document outlines the key stakeholders involved in the Uber-inspired ride-hailing project. Stakeholders include all individuals, groups, and organizations that are affected by the project or have an interest in its success.
 
-## External Stakeholders
+## Internal Stakeholders
 
 | **Key Stakeholders**            | **Role**                                                              | **Responsibilities**                                                                                            | **Impact**                                                                    | **Qualifications**                                                 |
 |---------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -16,7 +16,7 @@ This document outlines the key stakeholders involved in the Uber-inspired ride-h
 | **Legal and Compliance Team**   | Ensures adherence to legal standards and regulations                  | Ensuring app complies with laws; Mitigating legal risks; Overseeing contracts                                   | Medium - Ensures the app operates within legal guidelines                    | Knowledge of relevant laws and regulations; experience in tech industry compliance |
 | **Marketing Team**              | Promotes the app to attract riders and drivers                       | Developing and executing campaigns; Managing social media; Analyzing market trends                              | Medium - Efforts impact visibility and user acquisition                      | Background in digital marketing; skilled in campaign management and analytics |
 
-## Internal Stakeholders
+## External Stakeholders
 
 | **Key Stakeholders**            | **Role**                                                              | **Responsibilities**                                                                                            | **Impact**                                                                    | **Qualifications**                                                 |
 |---------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------|
