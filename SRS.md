@@ -171,6 +171,10 @@ The diagram details the step-by-step flow for each interaction, representing the
   - Rider: Registers, books rides, pays, and rates drivers.
   - Driver: Manages availability, accepts rides, completes rides, and rates riders.
   - Admin: Monitors activities, manages users, and accesses analytics.
+ 
+# Swimlane Diagram
+![swim](https://github.com/user-attachments/assets/7498810a-403b-4fc1-b712-ad627e8ee480)
+
 
 # Abuse Case Diagram
 
